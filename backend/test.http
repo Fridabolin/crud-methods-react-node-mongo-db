@@ -1,0 +1,25 @@
+GET http://localhost:8080/api/getposts
+
+###
+
+POST http://localhost:8080/api/newpost
+content-type: application/json
+
+{
+    "title":"this is a post",
+    "body":"this is a  post"
+}
+
+###
+//kopiera id från mongoDb
+PUT http://localhost:8080/api/updatepost/6298a2b1d50c3a7cebfb20b5
+content-type: application/json
+
+{
+    "title":"a freschley updated post",
+    "body":"this is a freschley updated post"
+}
+
+###
+
+DELETE http://localhost:8080/api/deletepost/6298a2b1d50c3a7cebfb20b5
